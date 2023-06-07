@@ -27,6 +27,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: ./one-container/pihole-unbound
-          file: ./Dockerfile
+          file: ./one-container/pihole-unbound/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/pihole-unbound:latest
